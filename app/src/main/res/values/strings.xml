@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GitHub User</string>
+    <string name="git_hub_username">Username</string>
+    <string name="git_hub_name">Name</string>
+    <string name="git_hub_type">Type</string>
+    <string name="search">Search View</string>
+    <string name="search_hint">Input GitHub Username</string>
+    <string name="git_hub_followers">Followers</string>
+    <string name="git_hub_followers_value">0</string>
+    <string name="git_hub_following">Following</string>
+    <string name="git_hub_following_value">0</string>
+    <string name="git_hub_repository">Repository</string>
+    <string name="git_hub_repository_value">0</string>
+    <string name="tab_follow">Follow Tab</string>
+</resources>
