@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GitHub User</string>
+    <string name="git_hub_username">Username</string>
+    <string name="git_hub_name">Name</string>
+    <string name="git_hub_type">Type</string>
+    <string name="search">Search View</string>
+    <string name="search_hint">Input GitHub Username</string>
+    <string name="git_hub_followers">Followers</string>
+    <string name="git_hub_followers_value">0</string>
+    <string name="git_hub_following">Following</string>
+    <string name="git_hub_following_value">0</string>
+    <string name="git_hub_repository">Repository</string>
+    <string name="git_hub_repository_value">0</string>
+    <string name="tab_follow">Follow Tab</string>
+    <string name="tab_home">Home Tab</string>
+    <string name="fab_favourite">Button Favourite</string>
+    <string name="fab_share">Button Share</string>
+    <string name="git_hub_search_result">Search Result</string>
+    <string name="git_hub_favourite">Favourite</string>
+    <string name="data_is_empty">I\'m Sorry Data is Empty</string>
+    <string name="data_not_found">I\'m Sorry Data not Found</string>
+    <string name="dark_mode">Dark Mode</string>
+</resources>

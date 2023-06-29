@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DetailActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/transparent">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_item_git_hub_user"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ImageContrastCheck"
+                        tools:src="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/tv_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/git_hub_name"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/img_item_git_hub_user"
+                        app:layout_constraintStart_toStartOf="@+id/img_item_git_hub_user"
+                        app:layout_constraintTop_toBottomOf="@+id/img_item_git_hub_user" />
+
+                    <TextView
+                        android:id="@+id/tv_item_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/git_hub_username"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_item_name"
+                        app:layout_constraintStart_toStartOf="@+id/tv_item_name"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_item_name" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        app:cardBackgroundColor="@color/primary_tosca"
+                        app:cardCornerRadius="30dp"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_item_username"
+                        app:layout_constraintStart_toStartOf="@+id/tv_item_username"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_item_username">
+
+                        <TextView
+                            android:id="@+id/tv_item_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="7dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="7dp"
+                            android:paddingBottom="4dp"
+                            android:text="@string/git_hub_type"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:ignore="TextContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_item_followers_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/git_hub_followers_value"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/cv_type"
+                        app:layout_constraintStart_toStartOf="@+id/cv_type"
+                        app:layout_constraintTop_toBottomOf="@+id/cv_type" />
+
+                    <TextView
+                        android:id="@+id/tv_item_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="55dp"
+                        android:text="@string/git_hub_followers"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_item_followers_value"
+                        app:layout_constraintStart_toStartOf="@+id/tv_item_followers_value"
+                        app:layout_constraintTop_toBottomOf="@+id/cv_type" />
+
+                    <TextView
+                        android:id="@+id/tv_item_following_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/git_hub_following_value"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_item_following"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_item_following"
+                        app:layout_constraintStart_toStartOf="@+id/tv_item_following"
+                        app:layout_constraintTop_toBottomOf="@+id/cv_type" />
+
+                    <TextView
+                        android:id="@+id/tv_item_following"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="40dp"
+                        android:text="@string/git_hub_following"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_item_followers"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_item_followers"
+                        app:layout_constraintTop_toTopOf="@+id/tv_item_followers" />
+
+                    <TextView
+                        android:id="@+id/tv_item_repository_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/git_hub_following_value"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_item_repository"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_item_repository"
+                        app:layout_constraintStart_toStartOf="@+id/tv_item_repository"
+                        app:layout_constraintTop_toBottomOf="@+id/cv_type" />
+
+                    <TextView
+                        android:id="@+id/tv_item_repository"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="@string/git_hub_repository"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_item_followers"
+                        app:layout_constraintStart_toEndOf="@+id/tv_item_followers"
+                        app:layout_constraintTop_toTopOf="@+id/tv_item_followers" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_follow"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:contentDescription="@string/tab_follow" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_follow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/primary_tosca"
+            android:contentDescription="@string/fab_favourite"
+            app:fabSize="normal"
+            app:layout_anchor="@id/vp_follow"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@drawable/ic_favorite_border"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,RedundantDescriptionCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
+            android:backgroundTint="@color/primary_tosca"
+            android:contentDescription="@string/fab_share"
+            app:fabSize="normal"
+            app:layout_anchor="@id/vp_follow"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@drawable/ic_share"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,RedundantDescriptionCheck" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
