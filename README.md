@@ -14,4 +14,4 @@ Proyek submission Aplikasi GitHub User (Navigation & API) dengan menambahkan beb
 ![Rating Final Submission of Belajar Fundamental Aplikasi Android!](/FinalSubmission-BFAA-Rating.png "Rating")
 
 ### 📷 Preview Aplikasi
-![Preview Aplikasi Final Submission of Belajar Fundamental Aplikasi Android!](/PreviewAplikasi-BFAA.png "Preview Aplikasi")
+![Preview Aplikasi Final Submission of Belajar Fundamental Aplikasi Android!](/PreviewAplikasi-Final-BFAA.png "Preview Aplikasi")
